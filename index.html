@@ -13,7 +13,7 @@
 h3 {
   /* margin: 20px; */
   font-family: "Paytone One";
-  color: #f33;
+  color: #e00; /* 赤い色に変更 */
   text-transform: uppercase;
   letter-spacing: -2px;
 }
@@ -22,9 +22,9 @@ h3 span {
   display: block;
   margin: 11px 0 17px 0;
   font-size: 100px;
-  line-height: 100px;
-  color: #f1ebe5;
-  text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  line-height: 20px;
+  color: #f00;
+  text-shadow: 0 13.36px 8.896px #c43333, 0 -2px 1px #f00;
   letter-spacing: -4px;
 }
     #video-background {
@@ -61,10 +61,11 @@ h3 span {
     }
 
     #video-container {
-      margin-top: 20px;
-      width: 100%;
+      margin-top: 0px;
+      margin-bottom: 30px;
+      width: 80%;
       max-width: 600px;
-      min-height: 300px;
+      min-height: 250px;
       border-radius: 50px;
       overflow: hidden;
     }
@@ -92,9 +93,11 @@ h3 span {
     }
 
     #omikuji-result {
-      margin-top: 20px;
-      font-size: 120px;
+      margin-top: 0px;
+      font-size: 80px;
       font-weight: bold;
+      text-align: center;
+      position: relative;
     }
 
     .pattern {
@@ -208,7 +211,7 @@ function showPopupMessage(message) {
       document.getElementById('omikuji-button').disabled = true;
 
       var results = [
-        { fortune: '超大吉！', video: 'vid/1.mp4' },
+        { fortune: '超大吉', video: 'vid/1.mp4' },
         { fortune: '大吉', video: 'vid/2.mp4' },
         { fortune: '中吉', video: 'vid/3.mp4' },
         { fortune: '末吉', video: 'vid/4.mp4' },
